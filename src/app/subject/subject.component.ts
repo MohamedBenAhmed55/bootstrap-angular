@@ -7,11 +7,11 @@ import { DesignUtilityService } from '../design-utility.service';
   styleUrl: './subject.component.css',
 })
 export class SubjectComponent implements OnInit, OnDestroy {
-  user:any = 'Peter';
+  user: any = 'Moncef';
   constructor(private designUtility: DesignUtilityService) {
-    this.designUtility.user.subscribe(res =>{
-      this.user = res
-    })
+    this.designUtility.user.subscribe((res) => {
+      this.user = res;
+    });
   }
   ngOnInit(): void {
     this.designUtility.newOffer.next(true);

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DesignUtilityService } from '../design-utility.service';
 
 @Component({
   selector: 'app-sub1',
@@ -6,8 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './sub1.component.css',
 })
 export class Sub1Component {
-  constructor() {}
+  constructor(private designUtility:DesignUtilityService) {}
   onChange(userid: any) {
     console.log(userid.value);
+    this.designUtility.setUserName(userid.value)
   }
 }

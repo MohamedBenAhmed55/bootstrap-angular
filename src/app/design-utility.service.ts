@@ -14,4 +14,8 @@ export class DesignUtilityService {
     document.getElementById('appendelement')?.appendChild(element);
   }
 
+  setUserName(name: string) {
+    this.user.next(name);
+  }
+
 }
