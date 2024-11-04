@@ -15,6 +15,7 @@ import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
 import { Sub3Component } from './sub3/sub3.component';
 import { Sub4Component } from './sub4/sub4.component';
+import { ReplysubjectComponent } from './replysubject/replysubject.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { Sub4Component } from './sub4/sub4.component';
     Sub2Component,
     Sub3Component,
     Sub4Component,
+    ReplysubjectComponent,
   ],
   imports: [
     BrowserModule,

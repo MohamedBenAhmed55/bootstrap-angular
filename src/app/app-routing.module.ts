@@ -7,6 +7,7 @@ import { ObservableComponent } from './observable/observable.component';
 import { IntervalComponent } from './interval/interval.component';
 import { OfOptComponent } from './of-opt/of-opt.component';
 import { SubjectComponent } from './subject/subject.component';
+import { ReplysubjectComponent } from './replysubject/replysubject.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
       {
         path: 'subject',
         component: SubjectComponent,
+      },
+      {
+        path: 'replysubject',
+        component: ReplysubjectComponent,
       },
     ],
   },

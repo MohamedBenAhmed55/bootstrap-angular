@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { ReplaySubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DesignUtilityService {
   newOffer = new Subject<boolean>();
-  user = new Subject<any>()
+  user = new Subject<any>();
+  blog = new ReplaySubject<string>();
+
   constructor() {}
   printValue(val: any) {
     let element = document.createElement('li');
@@ -18,4 +20,7 @@ export class DesignUtilityService {
     this.user.next(name);
   }
 
+  setAddBlog(blog: string) {
+    this.blog.next(blog);
+  }
 }

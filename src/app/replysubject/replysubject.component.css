@@ -1,0 +1,13 @@
+.blog {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog li {
+    background-color: #f8f9f1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
