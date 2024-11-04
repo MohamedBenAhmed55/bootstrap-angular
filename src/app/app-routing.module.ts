@@ -4,6 +4,7 @@ import { PromisesComponent } from './promises/promises.component';
 import { ListComponent } from './list/list.component';
 import { FromeventComponent } from './fromevent/fromevent.component';
 import { ObservableComponent } from './observable/observable.component';
+import { IntervalComponent } from './interval/interval.component';
 
 const routes: Routes = [
   {
@@ -13,7 +14,7 @@ const routes: Routes = [
   {
     path: 'observable',
     component: ObservableComponent,
-    children:[
+    children: [
       {
         path: '',
         component: ListComponent,
@@ -23,12 +24,15 @@ const routes: Routes = [
         component: FromeventComponent,
       },
       {
-        path:'**',
-        redirectTo:'promises'
-      }
-    ]
+        path: 'interval',
+        component: IntervalComponent,
+      },
+    ],
   },
-  
+  {
+    path: '**',
+    redirectTo: 'promises',
+  },
 ];
 
 @NgModule({

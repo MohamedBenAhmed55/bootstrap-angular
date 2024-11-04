@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   //     console.log(value)
   //   },
   // (error) =>{
-  //   alert(error.message)
+  //   // alert(error.message)
   // }, () =>{
   //   alert('Observable has completed emitting all values from array')
   // })
