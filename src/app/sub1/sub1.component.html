@@ -1,7 +1,7 @@
 <div class="card">  
   <div class="card-header">Sub:1</div>
   <div class="card-body">
-    <h5 class="card-title">SubUsername:</h5>
+    <h5 class="card-title">SubUsername: <span class="text-primary">{{user.value}}</span></h5> 
     <input type="text" class="form-control mb-3" #user/>
     <button class="btn btn-primary" (click)="onChange(user)">Submit</button>
   </div>
