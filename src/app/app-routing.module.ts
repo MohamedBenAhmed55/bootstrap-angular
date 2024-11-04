@@ -6,6 +6,7 @@ import { FromeventComponent } from './fromevent/fromevent.component';
 import { ObservableComponent } from './observable/observable.component';
 import { IntervalComponent } from './interval/interval.component';
 import { OfOptComponent } from './of-opt/of-opt.component';
+import { SubjectComponent } from './subject/subject.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'of-opt',
         component: OfOptComponent,
+      },
+      {
+        path: 'subject',
+        component: SubjectComponent,
       },
     ],
   },
