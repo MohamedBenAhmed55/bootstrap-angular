@@ -5,6 +5,7 @@ import { ListComponent } from './list/list.component';
 import { FromeventComponent } from './fromevent/fromevent.component';
 import { ObservableComponent } from './observable/observable.component';
 import { IntervalComponent } from './interval/interval.component';
+import { OfOptComponent } from './of-opt/of-opt.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'interval',
         component: IntervalComponent,
+      },
+      {
+        path: 'of-opt',
+        component: OfOptComponent,
       },
     ],
   },
