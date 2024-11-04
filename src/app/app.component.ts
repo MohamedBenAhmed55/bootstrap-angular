@@ -8,17 +8,17 @@ import { from, map, Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    this.myObserver.subscribe((val) => {
-      console.log(val);
-    });
-    this.transform.subscribe((value) => {
-      console.log(value)
-    },
-  (error) =>{
-    alert(error.message)
-  }, () =>{
-    alert('Observable has completed emitting all values from array')
-  })
+  //   this.myObserver.subscribe((val) => {
+  //     console.log(val);
+  //   });
+  //   this.transform.subscribe((value) => {
+  //     console.log(value)
+  //   },
+  // (error) =>{
+  //   alert(error.message)
+  // }, () =>{
+  //   alert('Observable has completed emitting all values from array')
+  // })
   }
 
   title = 'bootstrap-angular';

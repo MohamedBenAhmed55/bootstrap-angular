@@ -5,11 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PromisesComponent } from './promises/promises.component';
+import { ListComponent } from './list/list.component';
+import { FromeventComponent } from './fromevent/fromevent.component';
+import { ObservableComponent } from './observable/observable.component';
+import { NewObservableComponent } from './new-observable/new-observable.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PromisesComponent
+    PromisesComponent,
+    ListComponent,
+    FromeventComponent,
+    ObservableComponent,
+    NewObservableComponent
   ],
   imports: [
     BrowserModule,
